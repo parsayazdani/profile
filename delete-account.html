@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How to delete a Way Point account and associated data">
+  <title>Delete Your Way Point Account</title>
+  <style>
+    :root { color-scheme:dark; --bg:#0b1020; --card:#121a30; --text:#edf2ff; --muted:#adb9d6; --accent:#78a7ff; --line:#293452; --warn:#ffcf70; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:linear-gradient(145deg,#080c18,#111a33); color:var(--text); font-family:Arial,sans-serif; line-height:1.65; }
+    main { width:min(850px,calc(100% - 32px)); margin:40px auto; padding:40px; background:rgba(18,26,48,.96); border:1px solid var(--line); border-radius:20px; box-shadow:0 20px 60px rgba(0,0,0,.35); }
+    h1 { margin:0 0 8px; font-size:clamp(2rem,6vw,3.4rem); }
+    h2 { margin-top:34px; padding-top:10px; border-top:1px solid var(--line); }
+    p,li { color:var(--muted); }
+    a { color:var(--text); text-decoration-color:var(--accent); }
+    .back { display:inline-block; margin-bottom:28px; padding:10px 16px; border:1px solid var(--accent); border-radius:999px; text-decoration:none; }
+    .notice { padding:16px 18px; border-left:4px solid var(--warn); background:#1c2235; border-radius:8px; color:var(--text); }
+    @media(max-width:600px){ main{margin:16px auto;padding:24px;} }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">← Back to profile</a>
+  <h1>Delete Your Way Point Account</h1>
+  <p>This page explains how users of the <strong>Way Point</strong> mobile app can delete their account and associated data.</p>
+
+  <h2>Delete your account inside the app</h2>
+  <ol>
+    <li>Open Way Point and sign in to the account you want to delete.</li>
+    <li>Open <strong>Settings</strong>.</li>
+    <li>Open <strong>Privacy &amp; Security</strong>.</li>
+    <li>Select <strong>Delete Account</strong>.</li>
+    <li>Read the warning and confirm deletion.</li>
+    <li>If requested, sign in with the same Google account again to confirm your identity.</li>
+    <li>Wait until Way Point confirms that deletion is complete.</li>
+  </ol>
+  <p class="notice"><strong>Account deletion is permanent.</strong> It cannot be undone. Deleting your Way Point account does not delete your Google Account.</p>
+
+  <h2>What is deleted</h2>
+  <p>After successful account deletion, Way Point deletes:</p>
+  <ul>
+    <li>Your Way Point Firebase Authentication account.</li>
+    <li>Your registered Way Point cloud data in Cloud Firestore, including tasks, schedules, notes, task state, profile information, synced settings, XP, levels, streaks, break-day settings, and sync metadata.</li>
+    <li>Local data belonging to that account, including tasks, profile files, note attachments, app-lock PIN hash, and local cloud-sync backups.</li>
+    <li>Custom alarm audio files owned only by the deleted account.</li>
+    <li>The deleted account’s scheduled alarms, notifications, snoozes, active sessions, and missed-alarm records.</li>
+  </ul>
+
+  <h2>What may remain</h2>
+  <ul>
+    <li>Guest-mode data and data belonging to other Way Point accounts on the same device are preserved.</li>
+    <li>A random installation ID may remain because it identifies the app installation, not a Way Point account.</li>
+    <li>Google/Firebase may retain limited service records or backups under its own policies. Firebase states that deleted authentication information is removed from live and backup systems within up to 180 days, while logged IP addresses may be kept for a few weeks.</li>
+  </ul>
+
+  <h2>If you cannot access the app</h2>
+  <p>Email <a href="mailto:Hello.Waypoint.Support@gmail.com">Hello.Waypoint.Support@gmail.com</a> from the Google email address connected to your Way Point account. Use the subject <strong>Way Point Account Deletion Request</strong>. We may need to verify that you own the account before processing the request.</p>
+
+  <h2>Privacy policy</h2>
+  <p>For full details about Way Point’s data handling, read the <a href="privacy-policy.html">Way Point Privacy Policy</a>.</p>
+</main>
+</body>
+</html>
