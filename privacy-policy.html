@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Way Point mobile app privacy policy">
+  <title>Way Point Privacy Policy</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1020; --card:#121a30; --text:#edf2ff; --muted:#adb9d6; --accent:#78a7ff; --line:#293452; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:linear-gradient(145deg,#080c18,#111a33); color:var(--text); font-family:Arial,sans-serif; line-height:1.65; }
+    main { width:min(900px,calc(100% - 32px)); margin:40px auto; padding:40px; background:rgba(18,26,48,.96); border:1px solid var(--line); border-radius:20px; box-shadow:0 20px 60px rgba(0,0,0,.35); }
+    h1 { margin:0 0 6px; font-size:clamp(2rem,6vw,3.5rem); }
+    h2 { margin-top:36px; padding-top:8px; border-top:1px solid var(--line); font-size:1.45rem; }
+    h3 { color:#d8e3ff; }
+    p,li { color:var(--muted); }
+    strong,a { color:var(--text); }
+    a { text-decoration-color:var(--accent); }
+    .date { color:var(--accent); font-weight:700; }
+    .back { display:inline-block; margin-bottom:28px; padding:10px 16px; border:1px solid var(--accent); border-radius:999px; text-decoration:none; }
+    @media(max-width:600px){ main{margin:16px auto;padding:24px;} }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">← Back to profile</a>
+  <h1>Way Point Privacy Policy</h1>
+  <p class="date">Effective date: August 12, 2026</p>
+  <p>Way Point operates the Way Point mobile application (the “App”). This Privacy Policy explains what information the App handles, why it is used, where it is stored, and the choices available to you.</p>
+
+  <h2>1. Information the App handles</h2>
+  <h3>Information you create in the App</h3>
+  <p>Way Point stores the information you choose to enter or create, including:</p>
+  <ul>
+    <li>Task names, notes, schedules, repeat settings, completion and progress history, colours, icons, and task attachment metadata such as file names.</li>
+    <li>Task-related preferences, including alarms, alarm challenges, and notification choices.</li>
+    <li>Gamification data, including XP, levels, streaks, and related history.</li>
+    <li>Break days, sleep and wake preferences, auto-scheduling preferences, appearance settings, and other app preferences.</li>
+    <li>An optional profile name and profile picture.</li>
+    <li>An app-lock setting and a cryptographic hash of your PIN. Way Point does not store your PIN in readable form.</li>
+  </ul>
+
+  <h3>Account and technical information</h3>
+  <p>If you choose to sign in with Google, Way Point uses Firebase Authentication and Google Sign-In. This provides Way Point with a Firebase user ID and may provide account information such as your Google account email address. Your email is used to identify the account selected during sign-in and account replacement warnings.</p>
+  <p>Way Point also generates a random installation ID. It is used only to manage cloud-sync ownership between your devices. It is not used for advertising.</p>
+  <p>Firebase and Google may process limited technical information needed to provide and secure sign-in and cloud services, such as IP address and user-agent information. Their handling of that information is governed by Google’s applicable privacy terms.</p>
+
+  <h3>Super Focus information</h3>
+  <p>If you enable Super Focus, Way Point uses Android Accessibility access to detect the foreground app package name so it can enforce the focus session. This information is processed and stored locally on your device for the active focus session. Way Point does not upload foreground app package names, accessibility events, or usage history to Firebase.</p>
+
+  <h2>2. Where information is stored</h2>
+  <h3>On your device</h3>
+  <p>You can use Way Point without signing in. In that case, your task and preference data remains on your device.</p>
+  <p>Way Point stores local app data such as tasks, schedules, task state, preferences, gamification progress, streaks, local profile files, local note attachments, custom alarm-sound files, alarm schedules, and active-session data on your device.</p>
+  <p>Custom alarm audio files and the contents of task-note attachments are stored locally and are not uploaded by Way Point’s cloud sync.</p>
+
+  <h3>Firebase cloud sync</h3>
+  <p>If you sign in and cloud sync succeeds, Way Point stores the following information in Cloud Firestore under your Firebase user ID:</p>
+  <ul>
+    <li>Tasks, schedules, task state, notes, and attachment metadata.</li>
+    <li>Profile name and profile picture.</li>
+    <li>Gamification progress and streaks.</li>
+    <li>Break-day, notification, sleep/wake, appearance, app-lock, and other supported settings.</li>
+    <li>A hash of your app-lock PIN.</li>
+    <li>The random installation ID and limited sync-session metadata needed to coordinate sync.</li>
+  </ul>
+  <p>Custom alarm audio files and task-note attachment contents are not synced. Custom alarm selections are replaced with built-in sounds before task data is uploaded.</p>
+  <p>Firebase Authentication and Cloud Firestore are provided by Google. Firebase Authentication is operated from the United States. Cloud Firestore may process data on Google infrastructure in locations selected for the Firebase project or otherwise permitted by Google.</p>
+
+  <h2>3. How we use information</h2>
+  <p>Way Point uses information only to:</p>
+  <ul>
+    <li>Provide task planning, scheduling, alarms, notifications, and Super Focus.</li>
+    <li>Keep your progress, preferences, and profile available to you.</li>
+    <li>Sync your information across your own signed-in devices when you choose to use cloud sync.</li>
+    <li>Secure your account and app-lock feature.</li>
+    <li>Respond to support requests you send us.</li>
+  </ul>
+  <p>Way Point does not sell personal information. It does not include advertising SDKs, Firebase Analytics, Crashlytics, or third-party advertising trackers.</p>
+
+  <h2>4. Permissions</h2>
+  <p>Depending on the features you use and your Android version, Way Point may request permission for notifications, selected images or files, exact alarms, full-screen alarm alerts, battery-optimization settings, Do Not Disturb settings, display-over-other-apps, Accessibility access for Super Focus, and Usage Access settings. These permissions support the features described in the App.</p>
+  <p>Way Point does not use your location, contacts, microphone recordings, or camera recordings for its features. If you choose a profile image or note attachment, you select it from your device.</p>
+
+  <h2>5. Sharing and disclosures</h2>
+  <p>Way Point shares data with Google only as needed to provide Google Sign-In, Firebase Authentication, and Cloud Firestore cloud sync. We do not sell your data or share it with advertising networks or data brokers.</p>
+  <p>We may disclose information if required to comply with law, enforce rights, or protect the security of Way Point, users, or others.</p>
+
+  <h2>6. Retention and deletion</h2>
+  <p>Local data remains on your device until you delete it, delete the account data, clear app storage, or uninstall the App, depending on the data type.</p>
+  <p>When you use the in-app account-deletion feature, Way Point deletes the Firebase Authentication account, the associated registered Firestore user data, and account-scoped local data such as tasks, profile files, note attachments, cloud-sync backups, and the stored PIN hash. It also cancels and clears the deleted account’s scheduled alarms, notifications, snoozes, active sessions, missed-alarm records, and custom alarm audio files that are not still used by another local account. The deletion feature does not delete your Google Account itself.</p>
+  <p>A random device installation ID may remain after account deletion because it identifies the App installation rather than a Way Point account. Guest data and data belonging to other Way Point accounts on the same device are intentionally preserved. Clearing the App’s storage or uninstalling the App removes remaining local App data, subject to Android’s behavior.</p>
+  <p>Google/Firebase may retain certain service records and backups for limited periods under its own policies. Firebase states that, after a Firebase Authentication user is deleted, authentication information is removed from live and backup systems within up to 180 days; logged IP addresses may be retained for a few weeks.</p>
+
+  <h2>7. Security</h2>
+  <p>Way Point uses Firebase services that encrypt data in transit. Firebase Authentication and Cloud Firestore provide encryption at rest on Google’s infrastructure. On your device, Way Point stores the app-lock PIN only as a hash in secure storage. No security method is perfect, but we take reasonable steps to protect the information used by the App.</p>
+
+  <h2>8. Children</h2>
+  <p>Way Point is not directed at children under the age at which they can lawfully consent to data processing in their location. If you believe a child has provided personal information through Way Point, contact us so we can address the request.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>We may update this Privacy Policy when Way Point’s data practices or legal requirements change. We will post the updated version at the same public policy link and revise the effective date.</p>
+
+  <h2>10. Contact</h2>
+  <p>For privacy questions, support, or deletion requests, contact: <a href="mailto:Hello.Waypoint.Support@gmail.com">Hello.Waypoint.Support@gmail.com</a></p>
+</main>
+</body>
+</html>
